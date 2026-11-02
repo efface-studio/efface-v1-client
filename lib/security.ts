@@ -31,7 +31,7 @@ export function originCheck(req: Request): boolean {
  * Resolve the real client IP, in trust order:
  *   1. cf-connecting-ip   — set by Cloudflare, removed/rewritten if spoofed
  *      through the proxy. Trustworthy because middleware.ts rejects requests
- *      whose host isn't efface.dev (i.e. anything that bypassed Cloudflare).
+ *      whose host isn't shop.efface.dev (i.e. anything that bypassed Cloudflare).
  *   2. x-forwarded-for    — first token. Vercel sets this.
  *   3. x-real-ip          — last resort.
  *

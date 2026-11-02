@@ -9,8 +9,9 @@ const intlMiddleware = createMiddleware(routing);
 // the WAF rate-limit rule actually applies. A direct hit to the underlying
 // `*.vercel.app` URL would bypass all of that, so we reject it with 404.
 // Preview deployments (VERCEL_ENV=preview) keep working at their vercel.app URL.
-const CANONICAL_HOST = "efface.dev";
-const CANONICAL_HOSTS = new Set([CANONICAL_HOST, `www.${CANONICAL_HOST}`]);
+// efface.dev itself now serves the v2 site; this one lives at shop.efface.dev.
+const CANONICAL_HOST = "shop.efface.dev";
+const CANONICAL_HOSTS = new Set([CANONICAL_HOST]);
 
 export default function middleware(req: NextRequest) {
   if (process.env.VERCEL_ENV === "production") {
