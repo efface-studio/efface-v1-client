@@ -9,7 +9,7 @@ export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
 
-const SITE_URL = "https://efface.dev";
+const SITE_URL = "https://shop.efface.dev";
 const OG_IMAGE = `${SITE_URL}/og.png`;
 
 export async function generateMetadata({

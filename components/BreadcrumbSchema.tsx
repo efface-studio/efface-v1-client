@@ -1,7 +1,7 @@
 // Server component — emits Breadcrumb JSON-LD so Google can render
 // "efface > Apply" path in search results instead of a raw URL.
 
-const SITE_URL = "https://efface.dev";
+const SITE_URL = "https://shop.efface.dev";
 
 type Item = { name: string; href: string };
 

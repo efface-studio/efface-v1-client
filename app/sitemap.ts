@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { routing } from "@/i18n/routing";
 
-const SITE_URL = "https://efface.dev";
+const SITE_URL = "https://shop.efface.dev";
 
 // Static pages exposed under each locale. Demo pages and dynamic /demo/[slug]
 // are excluded from the sitemap on purpose (they're either ephemeral demos or

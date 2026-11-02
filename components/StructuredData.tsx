@@ -4,7 +4,7 @@
 
 import { getTranslations } from "next-intl/server";
 
-const SITE_URL = "https://efface.dev";
+const SITE_URL = "https://shop.efface.dev";
 
 const organization = {
   "@context": "https://schema.org",
